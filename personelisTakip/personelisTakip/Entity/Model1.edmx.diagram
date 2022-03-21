@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9185ada3c2834e5aa30a283be3ab0843" Name="Diagram1">
+        <EntityTypeShape EntityType="isTakipModel.tbl_departmanlar" Width="1.5" PointX="0.625" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="isTakipModel.tbl_personeller" Width="1.5" PointX="3" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="isTakipModel.tblAdmin" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="isTakipModel.tblFirmalar" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="isTakipModel.tblGorevDetaylari" Width="1.5" PointX="7.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="isTakipModel.tblGorevler" Width="1.5" PointX="5.375" PointY="0.625" IsExpanded="true" />
+        <AssociationConnector Association="isTakipModel.FK_tbl_personeller_tbl_departmanlar" ManuallyRouted="false" />
+        <AssociationConnector Association="isTakipModel.FK_tblGorevler_tbl_personeller" ManuallyRouted="false" />
+        <AssociationConnector Association="isTakipModel.FK_tblGorevler_tbl_personeller1" ManuallyRouted="false" />
+        <AssociationConnector Association="isTakipModel.FK_tblGorevDetaylari_tblGorevler" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="isTakipModel.tbl_cagrilar" Width="1.5" PointX="6.25" PointY="5.125" />
+        <AssociationConnector Association="isTakipModel.FK_tbl_cagrilar_tblFirmalar" />
+        <EntityTypeShape EntityType="isTakipModel.tblCagriDetay" Width="1.5" PointX="8.75" PointY="5.375" />
+        <EntityTypeShape EntityType="isTakipModel.tblmesajlar" Width="1.5" PointX="5" PointY="8.75" />
+        <AssociationConnector Association="isTakipModel.FK_tblCagriDetay_tbl_cagrilar" />
+        <AssociationConnector Association="isTakipModel.FK_tblmesajlar_tblFirmalar" />
+        <AssociationConnector Association="isTakipModel.FK_tblmesajlar_tblFirmalar1" />
+        <AssociationConnector Association="isTakipModel.FK_tbl_cagrilar_tbl_personeller" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
