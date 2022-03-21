@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="isTakipModelStoreContainer" CdmEntityContainer="isTakipEntities">
+    <EntitySetMapping Name="tbl_departmanlar">
+      <EntityTypeMapping TypeName="isTakipModel.tbl_departmanlar">
+        <MappingFragment StoreEntitySet="tbl_departmanlar">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_personeller">
+      <EntityTypeMapping TypeName="isTakipModel.tbl_personeller">
+        <MappingFragment StoreEntitySet="tbl_personeller">
+          <ScalarProperty Name="sifre" ColumnName="sifre" />
+          <ScalarProperty Name="rol" ColumnName="rol" />
+          <ScalarProperty Name="durum" ColumnName="durum" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+          <ScalarProperty Name="soyad" ColumnName="soyad" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+          <ScalarProperty Name="gorsel" ColumnName="gorsel" />
+          <ScalarProperty Name="departman" ColumnName="departman" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdmin">
+      <EntityTypeMapping TypeName="isTakipModel.tblAdmin">
+        <MappingFragment StoreEntitySet="tblAdmin">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="kullanici" ColumnName="kullanici" />
+          <ScalarProperty Name="sifre" ColumnName="sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFirmalar">
+      <EntityTypeMapping TypeName="isTakipModel.tblFirmalar">
+        <MappingFragment StoreEntitySet="tblFirmalar">
+          <ScalarProperty Name="gorsel" ColumnName="gorsel" />
+          <ScalarProperty Name="sifre" ColumnName="sifre" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+          <ScalarProperty Name="yetki" ColumnName="yetki" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="sektor" ColumnName="sektor" />
+          <ScalarProperty Name="il" ColumnName="il" />
+          <ScalarProperty Name="ilce" ColumnName="ilce" />
+          <ScalarProperty Name="adres" ColumnName="adres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblGorevDetaylari">
+      <EntityTypeMapping TypeName="isTakipModel.tblGorevDetaylari">
+        <MappingFragment StoreEntitySet="tblGorevDetaylari">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="gorev" ColumnName="gorev" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+          <ScalarProperty Name="saat" ColumnName="saat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblGorevler">
+      <EntityTypeMapping TypeName="isTakipModel.tblGorevler">
+        <MappingFragment StoreEntitySet="tblGorevler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="gorevVeren" ColumnName="gorevVeren" />
+          <ScalarProperty Name="gorevAlan" ColumnName="gorevAlan" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="durum" ColumnName="durum" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_cagrilar">
+      <EntityTypeMapping TypeName="isTakipModel.tbl_cagrilar">
+        <MappingFragment StoreEntitySet="tbl_cagrilar">
+          <ScalarProperty Name="cagriPersonel" ColumnName="cagriPersonel" />
+          <ScalarProperty Name="durum" ColumnName="durum" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="konu" ColumnName="konu" />
+          <ScalarProperty Name="cagriFirma" ColumnName="cagriFirma" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCagriDetay">
+      <EntityTypeMapping TypeName="isTakipModel.tblCagriDetay">
+        <MappingFragment StoreEntitySet="tblCagriDetay">
+          <ScalarProperty Name="saat" ColumnName="saat" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="cagri" ColumnName="cagri" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblmesajlar">
+      <EntityTypeMapping TypeName="isTakipModel.tblmesajlar">
+        <MappingFragment StoreEntitySet="tblmesajlar">
+          <ScalarProperty Name="durum" ColumnName="durum" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+          <ScalarProperty Name="mesaj" ColumnName="mesaj" />
+          <ScalarProperty Name="konu" ColumnName="konu" />
+          <ScalarProperty Name="alici" ColumnName="alici" />
+          <ScalarProperty Name="gonderen" ColumnName="gonderen" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
